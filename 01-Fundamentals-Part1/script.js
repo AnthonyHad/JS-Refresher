@@ -37,3 +37,24 @@ job = "teacher";
 
 // We can declare variables without let, const or var
 // However JS will create it for the global object and not the document scope
+
+// Math Operators
+//  ;  + ; - ; / ; * ; **
+// We can use the + to concatenate strings as well
+
+// Assignement Operators
+// = ; += ; -= ; /= ; *=
+// ++ ; --
+
+const ageJonas = 2037 - 1991;
+console.log(ageJonas);
+
+// Comparison Operators
+// > ; < ; >= ; <= ===> Returns boolean
+
+// Operator Precedence
+// Math always precedes comparison
+
+let x;
+y;
+x = y = 25 - 10 - 5; // x = y = 10
