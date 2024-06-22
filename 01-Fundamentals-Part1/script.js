@@ -114,7 +114,7 @@ console.log(Boolean(0));
 
 // Switch statement
 const day = "monday";
-
+// does a strict comparison and break stops the code if truthy
 switch (day) {
   case "monday":
     console.log("it's monday !!!");
@@ -129,3 +129,23 @@ switch (day) {
   default:
     console.log("not valid!");
 }
+
+// Statements vs Expressions
+
+// 3 + 4 is an expression because it will produce a value
+// 1991 is an expression
+// true && false is an expression
+
+// if(23 > 10) {
+// const str = "23 is bigger"
+//}
+
+// tempalte literals expect expressions only
+
+// Ternary operator
+
+const ageBro = 23;
+
+ageBro >= 18 ? console.log("hello") : console.log(" I like to dirnk water"); // it's an expression
+
+// That is why we can use this with tempalte literals.
