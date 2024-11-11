@@ -109,7 +109,7 @@ console.log(Boolean(0));
 
 // Logical Operators
 // AND: &&
-//OR: //
+//OR: ||
 // NOT: !
 
 // Switch statement
