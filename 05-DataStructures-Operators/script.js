@@ -136,5 +136,73 @@ const { sat, ...weekdays } = restaurant.openingHours;
 // Functions
 
 const add = function (...numbers) {
-  console.log(numbers); // logs an arry of all arguments input
+  console.log(numbers); // logs an array of all arguments input
 };
+
+// Logical operators
+
+// They can use any data type, they can return any data type
+// they can also be used for short circuit evaluation
+
+// Short circuiting
+// if first operand is truthy then the next operand will not be evaluated
+
+// OR
+
+console.log(3 || "Jonas");
+console.log(" " || "Jonas");
+console.log(true || 0);
+console.log(undefined || null);
+
+// AND
+
+// Short circuits when the first result is falsy
+
+0 && "Jonas"; // 0
+
+// Nullish Coalescing Operator
+0 || 10; // returns 10
+
+0 ?? 10; // returns 0
+
+// Logical Assignement Operators
+
+// rest1.numGuest = rest1.numGuests || 10;
+// rest2.numGuests = res2.numGuests || 10;
+
+// OR assignement Operator
+rest1.numGuests ||= 10;
+rest2.numGuests ||= 10;
+
+// Nullish assignement Operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// AND assignement operator
+
+rest1.owner &&= 10;
+rest2.owner &&= 10;
+
+// For Of Loop
+
+const menuee = [];
+
+for (const item of menuee) console.log(item);
+for (const [i, el] of menuee.entries()) console.log(`${i + 1} ${el}`);
+
+// Enhanced Object Literals
+
+hours = {};
+
+// {
+
+// hours,}
+
+// Can do the same with functions
+
+// Optional Chaining
+
+// restaurant.openingHours.mon?.open >> only if everything to the left exists.
+// restaurant.openingHours?.mon?.open
+
+// Optional chaining operator is used with nullish coalescent operator
