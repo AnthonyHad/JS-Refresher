@@ -185,3 +185,7 @@ window.addEventListener("load", function (e) {
 window.addEventListener("beforeunload", function (e) {
   // When a user closes the tab
 });
+
+// if the script is added to the head then using async or defer makes more sense
+// Defer is the best
+// Async for third parties
